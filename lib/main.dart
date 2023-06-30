@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'Login.dart';
+import 'login_page_final.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const LoginPage(title: 'Login'),
+      home: const LoginPage(),
     );
   }
 }
@@ -78,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.add), label: 'add'),
+              icon: Icon(Icons.search), label: 'add'),
           BottomNavigationBarItem(
               icon: Icon(Icons.school), label: 'School'),
         ],
